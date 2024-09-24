@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "4.0.0",
-  "homepage": "https://mldangelo.com/",
+  "homepage": "https://eslemakbiyik.github.io/personal-website",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   },
   "scripts": {
     "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
+    "deploy": "gh-pages -d build",
     "build": "rimraf ./build && react-scripts build",
     "lint": "eslint \"**/*.js\"",
     "predeploy": "npm run build && react-snap",
